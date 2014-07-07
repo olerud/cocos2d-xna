@@ -54,14 +54,14 @@ namespace Cocos2D
             m_strFontName = _fontName;
             m_uFontSize = _fontSize;
 
-            CCLabelTTF label = new CCLabelTTF(value, m_strFontName, m_uFontSize);
+            CCLabel label = new CCLabel(value, m_strFontName, m_uFontSize);
             base.InitWithLabel(label, selector);
             return true;
         }
 
         protected void RecreateLabel()
         {
-            CCLabelTTF label = new CCLabelTTF((m_pLabel as ICCLabelProtocol).Text, m_strFontName, m_uFontSize);
+            CCLabel label = new CCLabel((m_pLabel as ICCLabelProtocol).Text, m_strFontName, m_uFontSize);
             Label = label;
         }
     }
