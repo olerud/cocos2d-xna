@@ -25,6 +25,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <AssemblyName>cocos2dTests</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>True</DebugSymbols>
@@ -90,7 +91,7 @@
     <MtouchUseLlvm>True</MtouchUseLlvm>
     <MtouchI18n />
     <MtouchArch>ARMv7, ARMv7s</MtouchArch>
-    <AssemblyName>cocos2d.tests</AssemblyName>
+    <AssemblyName>cocos2dtests</AssemblyName>
     <MtouchSdkVersion>3.0</MtouchSdkVersion>
   </PropertyGroup>
   <ItemGroup>
@@ -1014,9 +1015,9 @@
     <Compile Include="classes\tests\SpriteTest\SpriteTestScene.cs">
       <SubType>Code</SubType>
     </Compile>
-<Compile Include="classes\tests\MotionStreakTest\LightningStreakTest.cs" />
-<Compile Include="classes\tests\ParallaxTest\ParallaxScrollTest.cs" />
-<Compile Include="classes\tests\SpriteTest\SpriteZOrder.cs">
+    <Compile Include="classes\tests\MotionStreakTest\LightningStreakTest.cs" />
+    <Compile Include="classes\tests\ParallaxTest\ParallaxScrollTest.cs" />
+    <Compile Include="classes\tests\SpriteTest\SpriteZOrder.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="classes\tests\SpriteTest\SpriteZVertex.cs">
