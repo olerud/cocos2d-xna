@@ -7,8 +7,7 @@ Cocos2D-XNA : Reach To Infinity!
 License
 -------
 
-This project is open source, freely available, and free of royalties or encumberance. The software is released under the highly permissive MIT License.
-
+This work is copyrighted by the Cocos2D-XNA group. This copyright is non-transferrable and resides solely with the authors of this intellectual work product. Any use of this work, in whole or in part, is subject to the License found in the LicenseAndCredit.txt file found in this repository. Jurisdiction for any and all copyright claims, and rights therein, shall reside in the United States of America, and the State of California.
 
 Download and Run
 ----------------
