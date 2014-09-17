@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cocos2d.Android", "cocos2d\cocos2d.Android.csproj", "{64725C5B-A1BC-4974-8538-A1158BABF572}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGame.Framework.Android", "MonoGame\MonoGame.Framework\MonoGame.Framework.Android.csproj", "{BA9476CF-99BA-4D03-92F2-73D2C5E58883}"
@@ -76,6 +78,7 @@ Global
 		{713EE5CA-C850-42AD-AC67-B6546AC8BFFB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{713EE5CA-C850-42AD-AC67-B6546AC8BFFB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{713EE5CA-C850-42AD-AC67-B6546AC8BFFB}.Release|Android.ActiveCfg = Release|Any CPU
+		{713EE5CA-C850-42AD-AC67-B6546AC8BFFB}.Release|Android.Build.0 = Release|Any CPU
 		{713EE5CA-C850-42AD-AC67-B6546AC8BFFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{713EE5CA-C850-42AD-AC67-B6546AC8BFFB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{713EE5CA-C850-42AD-AC67-B6546AC8BFFB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
