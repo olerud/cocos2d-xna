@@ -69,6 +69,8 @@ namespace Cocos2D
         private bool m_bManaged;
         private bool m_bAntialiased;
 
+        public Action OnReInit;
+
         public CCTexture2D()
         {
             m_samplerState = SamplerState.LinearClamp;
@@ -86,7 +88,7 @@ namespace Cocos2D
         {
             get
             {
-                if (m_Texture2D != null && m_Texture2D.IsDisposed)
+                if (m_Texture2D == null || m_Texture2D.IsDisposed)
                 {
                     Reinit();
                 }
@@ -759,7 +761,8 @@ namespace Cocos2D
 
         public override void Reinit()
         {
-            CCLog.Log("reinit called on texture '{0}' {1}x{2}", Name, m_tContentSize.Width, m_tContentSize.Height);
+			CCLog.Log("reinit called on {1} '{0}' {2}", ToString(), m_CacheInfo.CacheType, 
+				(m_CacheInfo.CacheType == CCTextureCacheType.AssetFile || m_CacheInfo.CacheType == CCTextureCacheType.String) ? m_CacheInfo.Data : string.Empty);
 
             Texture2D textureToDispose = null;
             if (m_Texture2D != null && !m_Texture2D.IsDisposed && !m_bManaged)
@@ -818,6 +821,10 @@ namespace Cocos2D
             if (textureToDispose != null && !textureToDispose.IsDisposed)
             {
                 textureToDispose.Dispose();
+            }
+            if (OnReInit != null)
+            {
+                OnReInit();
             }
         }
 
